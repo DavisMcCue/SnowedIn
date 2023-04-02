@@ -1,4 +1,23 @@
-.IntroBackground img{
-    height: 100vh;
+.IntroBackgroundIcon img{
+    margin-left: 815px;
+    margin-top: 50px;
+    height: 6vh;
+    width: 3.5vw;
+}
+.Header img{
+    height: 25px;
     width: 100vw;
 }
+.WelcomeText p{
+    margin-top: -135px;
+    margin-left: 860px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    position: absolute;
+}
+.TitleText h1{
+    margin-left: 890px;
+    margin-top: -50px;
+    color: #0066b2;
+}
+
