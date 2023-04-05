@@ -6,42 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="include/StylePage.css">
 <link rel="stylesheet" href="include/NavMenuCSSPage.css">
+<script src="Scripts/SlideShowMainPage.js" defer></script>
 <title>Intro - Snowed In</title>
 </head>
 <body>
     <div class="Header">
         <img src="include/Images/banner.webp" alt="Bannercolor">
     </div>
-            <div class="IntroBackgroundIcon">
-                <img src="include/Images/snowman.png" alt="Snow Icon">
+      <div class="WelcomeText">
+        <p>Welcome To Trivia Night!</p>
+        </div>
+          <div class="TitleText">
+            <h1>Snowed In!</h1>
             </div>
-                    <div class="WelcomeText">
-                        <p>Welcome To Trivia Night!</p>
-                    </div>
-                        <div class="TitleText">
-                            <h1>Snowed In!</h1>
-                         </div>
-                         <div class="navbar">
-                           <a href="#home">Home</a>
-                           <a href="#news">LeaderBoards</a>
-                           <div class="dropdown">
-                             <button class="dropbtn">Types of Trivia
-                               <i class="button"></i>
-                             </button>
-                             <div class="dropdown-content">
-                               <a href="#">Movie Trivia</a>
-                               <a href="#">Tv-Show Trivia</a>
-                               <a href="#">Video Game Trivia</a>
-                             </div>
-                           </div>
-                         </div>
-             <div id="slider">
-                <ul id="slideWrap"> 
-                  <li><img src="include/Images/trivianight.gif" alt=""></li>
-                  <li><img src="include/Images/Tv-Show.avif" alt=""></li>
-                  <li><img src="include/Images/Movie.webp" alt=""></li>
-                </ul>
+              <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#home">About Us</a>
+                <a href="#news">LeaderBoards</a>
+                  <div class="dropdown">
+                    <button class="dropbtn">Types of Trivia
+                    <i class="button"></i>
+                      </button>
+                       <div class="dropdown-content">
+                         <a href="#">Movie Trivia</a>
+                         <a href="#">Tv-Show Trivia</a>
+                         <a href="#">Video Game Trivia</a>
+                          </div>
+                  </div>
              </div>
+      <!--Slideshow Images-->
+     <header class="slider">
+        <img src="include/Images/MoveTheater.gif" class="imgs" id="Movies">
+        <img src="include/Images/tv show.gif" class="imgs" id="Tv_shows">
+        <img src="include/Images/trivianight.gif" class="imgs" id="Video_Games">
+     </header>
+      <!--Slideshow Images-->
+      <div class="Movie_button">
+           <button id="movie_Style">Movie Trivia</button>
+      </div>
+      <div class="TV_Show_Button">
+        <button id="tv_Show_Style">Tv-Show Trivia</button>
+      </div>
+      <div class="Video_Game_Button">
+        <button id="video_Game_Style">Video Game Trivia</button>
+      </div>
+
                   
 </body>
 </html>
