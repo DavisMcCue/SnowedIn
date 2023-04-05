@@ -39,5 +39,5 @@ function nextImage()
         document.getElementById('video_Game_Style').style.visibility= 'none';
     }
 }
-
+    //Buttons Work in Progress
     //Button inside this function? display when current matching slide is present?
