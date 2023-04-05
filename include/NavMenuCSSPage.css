@@ -1,8 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: gray;
-}
+
 /* Navbar container */
 .navbar {
     overflow: hidden;
@@ -72,35 +68,6 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  /*Img Slide Size*/
-  #slider {
-    position: relative;
-    width: 1850px;
-    height: 700px;
-    margin: 1.5%;
-  
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  }
-  #slider ul {
-    position: relative;
-    list-style: none;
-    height: 100%;
-    width: 10000%;
-    padding: 0;
-    margin: 0;
-    transition: all 750ms ease;
-    left: 0;
-  }
-  #slider ul li {
-    position: relative;
-    height: 100%;
-  
-    float: left;
-  }
-  #slider ul li img{
-    width: 1850px;
-    height: 700px;
-  }
+
 
  

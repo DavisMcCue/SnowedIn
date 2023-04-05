@@ -1,23 +1,125 @@
-.IntroBackgroundIcon img{
-    margin-left: 815px;
-    margin-top: 50px;
-    height: 6vh;
-    width: 3.5vw;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;
+    font-family: sans-serif;
 }
 .Header img{
-    height: 25px;
+    height: 1vw;
     width: 100vw;
 }
 .WelcomeText p{
-    margin-top: -135px;
+    margin-top: -22px;
     margin-left: 860px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:black;
     position: absolute;
 }
 .TitleText h1{
-    margin-left: 890px;
-    margin-top: -50px;
-    color: #0066b2;
+    margin-left: 860px;
+    margin-top: 2px;
+    position: absolute;
+    color: #0d98ba;
 }
+
+.slider{
+    height: 100vh;
+    position: relative;
+}
+.imgs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: 4s ease-in-out;
+}
+/*Movie Button Style */
+.Movie_button{
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 855px;
+}
+#movie_Style{
+    display: inline-block;
+    background-color: #0d98ba;
+    padding: 20px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition: all 0.5s; /* add this line, chrome, safari, etc */
+    -moz-transition: all 0.5s; /* add this line, firefox */
+    -o-transition: all 0.5s; /* add this line, opera */
+    transition: all 0.5s; /* add this line */
+}
+#movie_Style:hover{
+    background-color: black;
+}
+/*TV-Show Button Style */
+.TV_Show_Button{
+    position: absolute;
+    margin-top: -825px;
+    margin-left: 815px;
+}
+#tv_Show_Style{
+    display: inline-block;
+    background-color: #0d98ba;
+    padding: 20px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition: all 0.5s; /* add this line, chrome, safari, etc */
+    -moz-transition: all 0.5s; /* add this line, firefox */
+    -o-transition: all 0.5s; /* add this line, opera */
+    transition: all 0.5s; /* add this line */
+}
+#tv_Show_Style:hover{
+    background-color: black;
+}
+/*Video Game Button Style */
+.Video_Game_Button{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 855px;
+}
+#video_Game_Style{
+    display: inline-block;
+    background-color: #0d98ba;
+    padding: 20px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition: all 0.5s; /* add this line, chrome, safari, etc */
+    -moz-transition: all 0.5s; /* add this line, firefox */
+    -o-transition: all 0.5s; /* add this line, opera */
+    transition: all 0.5s; /* add this line */
+}
+#video_Game_Style:hover{
+    background-color: black;
+}
+
+
+
 
