@@ -6,14 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="include/StylePage.css">
 <link rel="stylesheet" href="include/NavMenuCSSPage.css">
-<link rel="stylesheet" href="include/PopUpTab.css">
 <script src="Scripts/SlideShowMainPage.js" defer></script>
 <title>Intro - Snowed In</title>
 </head>
 <body>
-    <div class="Header">
+    <!-- Begin Header Section-->
+    <div class="header">
         <img src="include/Images/banner.webp" alt="Bannercolor">
     </div>
+     <!-- End Header Section-->
       <div class="WelcomeText">
         <p>Welcome To Trivia Night!</p>
         </div>
@@ -35,13 +36,15 @@
                           </div>
                   </div>
              </div>
-      <!--Slideshow Images-->
+      <!-- Begin Slideshow Images-->
      <header class="slider">
         <img src="include/Images/MoveTheater.gif" class="imgs" id="Movies">
         <img src="include/Images/tv show.gif" class="imgs" id="Tv_shows">
         <img src="include/Images/trivianight.gif" class="imgs" id="Video_Games">
      </header>
-      <!--Slideshow Images-->
+      <!--End Slideshow Images-->
+
+      <!--Begin Button Images-->
       <div class="Movie_button">
            <button id="movie_Style">Movie Trivia</button>
       </div>
@@ -51,13 +54,22 @@
       <div class="Video_Game_Button">
         <button id="video_Game_Style">Video Game Trivia</button>
       </div>
-    <div class="Header">
-        <img src="include/Images/banner.webp" alt="Bannercolor">
+       <!--End Button Images-->
+
+      <!--Display UserName Top Right Hand Corner-->
+    <div class="UsernamePosition" id="TheUsersNameDisplayed">
+      <p>Username: <span id="result"> </span></p>
+      <script>document.getElementById("result").innerHTML=localStorage.getItem("Users");</script>
+    </div>
+
+    <!-- Begin Footer Section-->
+    <div class="footer">
+      <img src="include/Images/banner.webp" alt="Bannercolor">
     </div>
     <div class="theFooter">
       <footer><h5>@All Rights Reserved 2023</h5></footer>     
     </div>   
-
+     <!-- End Footer Section-->
 </body>
 </html>
 
