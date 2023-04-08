@@ -9,9 +9,18 @@ body{
     background: gray;
     font-family: sans-serif;
 }
-.Header img{
+.header img{
     height: 1vw;
     width: 100vw;
+}
+.footer img{
+    height: 1vw;
+    width: 100vw;
+}
+.theFooter{
+    margin-left: 860px;
+    position: absolute;
+    margin-top: -22px;
 }
 .WelcomeText p{
     margin-top: -22px;
@@ -63,6 +72,8 @@ body{
     -moz-transition: all 0.5s; /* add this line, firefox */
     -o-transition: all 0.5s; /* add this line, opera */
     transition: all 0.5s; /* add this line */
+    display: none;
+
 }
 #movie_Style:hover{
     background-color: black;
@@ -89,6 +100,7 @@ body{
     -moz-transition: all 0.5s; /* add this line, firefox */
     -o-transition: all 0.5s; /* add this line, opera */
     transition: all 0.5s; /* add this line */
+    display: none;
 }
 #tv_Show_Style:hover{
     background-color: black;
@@ -115,11 +127,15 @@ body{
     -moz-transition: all 0.5s; /* add this line, firefox */
     -o-transition: all 0.5s; /* add this line, opera */
     transition: all 0.5s; /* add this line */
+    display: none;
 }
 #video_Game_Style:hover{
     background-color: black;
 }
-
-
+.UsernamePosition{
+    margin-left: 1735px;
+    position: absolute;
+    margin-top: -1028px;
+}
 
 
