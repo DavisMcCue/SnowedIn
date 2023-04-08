@@ -5,7 +5,7 @@ let currentImageCounter = 0;
 
 /*Display First Image*/
 slideShowImages[currentImageCounter].style.display ="block";
-
+movie_Style.style.display = "block";
 setInterval(nextImage, nextImageDelay);
 
 function nextImage()
@@ -14,30 +14,23 @@ function nextImage()
     currentImageCounter = (currentImageCounter + 1) % slideShowImages.length;
     slideShowImages[currentImageCounter].style.display ="block";
 
-    var movieButton = document.getElementById("movie_Style");
-    var tv_ShowButton = document.getElementById("tv_Show_Style");
-    var video_GameButton = document.getElementById("Video_Games");
-
-    console.log(slideShowImages);
-   
-    if (slideShowImages.item == "Movies") 
+    console.log(currentImageCounter);
+    if(currentImageCounter == "0")
     {
-        document.getElementById('movie_Style').style.visibility= 'none';
-        document.getElementById('tv_Show_Style').style.visibility= 'hidden';
-        document.getElementById('video_Game_Style').style.visibility= 'hidden';
-    } 
-    else if (slideShowImages.item == "Tv_shows")
-    {
-        document.getElementById('movie_Style').style.visibility= 'hidden';
-        document.getElementById('tv_Show_Style').style.visibility= 'none';
-        document.getElementById('video_Game_Style').style.visibility= 'hidden';
+        movie_Style.style.display = "block";
+        tv_Show_Style.style.display = "none";
+        video_Game_Style.style.display = "none";
     }
-    else if (slideShowImages.item == "Video_Games")
+    else if(currentImageCounter == "1")
     {
-        document.getElementById('movie_Style').style.visibility= 'hidden';
-        document.getElementById('tv_Show_Style').style.visibility= 'hidden';
-        document.getElementById('video_Game_Style').style.visibility= 'none';
+        movie_Style.style.display = "none";
+        tv_Show_Style.style.display = "block";
+        video_Game_Style.style.display = "none";
+    }
+    else if(currentImageCounter == "2")
+    {
+        movie_Style.style.display = "none";
+        tv_Show_Style.style.display = "none";
+        video_Game_Style.style.display = "block";
     }
 }
-    //Buttons Work in Progress
-    //Button inside this function? display when current matching slide is present?
