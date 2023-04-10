@@ -1,22 +1,22 @@
 //Declaring Variables
-let timeLeft = document.querySelector(".timer-left");
-let quizContainer = document.getElementById("container");
+let addingUserScore = document.querySelector(".adding-score");
+let quizHolder = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
-let displayContainer = document.getElementById("display-container");
-let scoreContainer = document.querySelector(".score-container");
+let displayHolder = document.getElementById("display-container");
+let scoreHolder = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
+let userPoints = document.getElementById("user-points");
 let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
+let userName = document.getElementById("result").innerHTML=localStorage.getItem("Users");
 let questionCount;
 let scoreCount = 0;
-let count = 26;
-let countdown;
+let scorePoints = 0;
 
 //Creating Questions Array
-
-const quizArray = [{id: "0", question:"Who actually drew the sketch of Rose in Titanic?", options:["Leonardo DiCaprio", "Billy Zane","James Cameron","Kathy Bates"],correct: "James Cameron"},
+const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Rose in Titanic?", options:["Leonardo DiCaprio", "Billy Zane","James Cameron","Kathy Bates"],correct: "James Cameron"},
 {id: "1", question:"Freddy Krueger wears a striped sweater that is which colors?", options:["Red and blue","Orange and green"," Red and green", " Orange and brown"],correct: "Red and green"},
 {id: "2", question:"If you watch the Marvel movies in chronological order, which movie would you watch first?", options:["Iron Man", "Captain America: The First Avenger", "Doctor Strange", "Captain Marvel"],correct: "Captain America: The First Avenger"},
 {id: "3", question:"What is the name of the camp where counselors are terrorized by a slasher in Friday the 13th?", options:["Camp Holland Lake", "Camp Crystal Lake", "Camp Diamond Lake","Camp Green Lake"],correct:"Camp Crystal Lake" },
@@ -37,89 +37,137 @@ const quizArray = [{id: "0", question:"Who actually drew the sketch of Rose in T
 {id: "18", question:"Who does Tim Curry play in Clue?", options:["Professor Plum","Wadsworth","Mr. Green","Colonel Mustard"],correct: "Wadsworth"},
 {id: "19", question:"When was the last Twilight movie released?", options:["2010", "2012", "2014","2016"],correct:"2012" }];
 
+//Restart Quiz
+restart.addEventListener("click", () => {
+    New_Game();
+    scorePoints = 0;
+    displayHolder.classList.remove("hide");
+    scoreHolder.classList.add("hide");
+  });
 
+  //Next Button
+  nextBtn.addEventListener(
+    "click",
+    (displayNext = () => {
 
+      //increment questionCount
+      questionCount += 1;
+      //if last question
+      if (questionCount == arrayOfQuestions.length) 
+      {
+        //hide question container and display score
+        displayHolder.classList.add("hide");
+        scoreHolder.classList.remove("hide");
+        //user score
+        userScore.innerHTML =
+          "Your score: " + scoreCount + " out of " + questionCount;
+        //user points
+        userPoints.innerHTML =
+            "Your points: " + scorePoints;
+      } 
+      else 
+      {
+        countOfQuestion.innerHTML =
+          questionCount + 1 + " of " + arrayOfQuestions.length + " Question";
+
+        //display quiz
+        NewDisplay(questionCount);
+      }
+    })
+  );
 
 //Display quiz
-const quizDisplay = (questionCount) => {
-    let quizCards = document.querySelectorAll(".container-mid");
+const NewDisplay = (questionCount) => {
+    let otherCards = document.querySelectorAll(".container-mid");
 
     //hide other cards
-    quizCards.forEach((card) => {
+    otherCards.forEach((card) => {
         card.classList.add("hide");
     });
 
-    //display current question card
-    quizCards[questionCount].classList.remove("hide");
+    //display current card
+    otherCards[questionCount].classList.remove("hide");
 };
-
-
 //Quiz Creation Function/Code
-function quizCreator()
+function quizMaker()
 {
     //Randomly Sort The Questions
-    quizArray.sort(() => Math.random() - 0.5);
+    arrayOfQuestions.sort(() => Math.random() - 0.5);
+
     //generate the quiz
-    for(let i of quizArray){
+    for(let i of arrayOfQuestions){
         //random sort the Options
         i.options.sort(() => Math.random() - 0.5);
         //quiz card creation
-        let div = document.createElement("div");
-        div.classList.add("container-mid", "hide");
+        let creationDiv = document.createElement("div");
+        creationDiv.classList.add("container-mid", "hide");
         //question number
-        countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+        countOfQuestion.innerHTML = 1 + " of " + arrayOfQuestions.length + " Question";
         //question
         let question_DIV = document.createElement("p");
         question_DIV.classList.add("question");
         question_DIV.innerHTML = i.question;
-        div.appendChild(question_DIV);
+        creationDiv.appendChild(question_DIV);
         //options
-        div.innerHTML += `<button class="option-div" onclick="checker(this)">${i.options[0]}</button>
+        creationDiv.innerHTML += `
+        <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
         <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
         <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
         <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[4]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[5]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[6]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[7]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[8]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[9]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[10]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[11]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[12]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[13]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[14]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[15]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[16]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[17]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[18]}</button>
-        <button class="option-div" onclick="checker(this)">${i.options[19]}</button>
         `;
-        quizContainer.appendChild(div);
+        quizHolder.appendChild(creationDiv);
     }
 }
-
+//Checker Function to check if option is correct or not
+function checker(userOption) {
+  let userSolution = userOption.innerText;
+  let question =
+    document.getElementsByClassName("container-mid")[questionCount];
+  let choices = question.querySelectorAll(".option-div");
+  
+  //if user clicked answer == correct option stored in object
+  if (userSolution === arrayOfQuestions[questionCount].correct) 
+  {
+    userOption.classList.add("correct");
+    scorePoints += 100;
+    addingUserScore.innerHTML = scorePoints;
+    scoreCount++;
+  } 
+  else 
+  {
+    userOption.classList.add("incorrect");
+    scorePoints - 50;
+    //For marking the correct option
+    choices.forEach((element) => {
+      if (element.innerText == arrayOfQuestions[questionCount].correct) 
+      {
+        element.classList.add("correct");
+      }
+    });
+  }
+  //disable all options
+  choices.forEach((element) => {
+    element.disabled = true;
+  });
+}
 //initial setup
-function initial()
-{
-    quizContainer.innerHTML ="";
-    questionCount = 0;
-    scoreCount = 0;
-    count = 26;
-    quizCreator();
-    quizDisplay(questionCount);
+function New_Game() {
+  quizHolder.innerHTML = "";
+  questionCount = 0;
+  scoreCount = 0;
+  addingUserScore.innerHTML = 0;
+  quizMaker();
+  NewDisplay(questionCount);
 }
-
-//when user clicks on start button do this -->
+//Activiates the start button either on refresh of windows or restart button
 startButton.addEventListener("click", () => {
-    startScreen.classList.add("hide");
-    displayContainer.classList.remove("hide");
-    initial();
-
+  startScreen.classList.add("hide");
+  displayHolder.classList.remove("hide");
+  New_Game();
 });
-//hide quiz and display on start screen
-window.onload= () => {
-    startScreen.classList.remove("hide");
-    displayContainer.classList.add("hide");
-}
 
+//Quiz hidden till user clicks on start
+window.onload = () => {
+  startScreen.classList.remove("hide");
+  displayHolder.classList.add("hide");
+};
