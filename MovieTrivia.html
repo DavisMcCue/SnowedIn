@@ -5,11 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="include/MovieTrivia.css">
-<script src="Scripts/MovieTriviaControls.js" defer></script>
 </head>
 <body>
     <!-- Begin Header Section-->
-    <div class="header">
+    <div class="header-blue-bar">
         <img src="include/Images/banner.webp" alt="Bannercolor">
     </div>
     <div class="UsernamePosition" id="TheUsersNameDisplayed">
@@ -19,27 +18,27 @@
 
     <div class="start-screen">
         <button id="start-button">Start</button>
-    </div>
-    <div id="display-container">
-       <div class="header">
-           <div class="number-of-count">
-               <span class="number-of-question">1 of 20 questions</span>
-            </div>
-            <div class="timer-div">
-                <img src="include/Images/Stopwatch.jpg"/>
-                <span class="time-left">25s</span>
-            </div>
+      </div>
+      <div id="display-container">
+        <div class="header">
+          <div class="number-of-count">
+            <span class="number-of-question">1 of 20 questions</span>
+          </div>
+          <div class="adding-score-div">
+            <img src="include/Images/score-icon.png" />
+            <span class="adding-score">0</span>
+          </div>
         </div>
-         <!--Questions and options will be displayed here--> 
-        <div class="container">
+        <div id="container">
+          <!-- questions and options will be displayed here -->
+        </div>
         <button id="next-button">Next</button>
-        </div>
-    </div>
-    <div class="score-container hide">
-        <div id="user-score">Demo Score</div>
+      </div>
+      <div class="score-container hide">
+        <div id="user-score">Score</div>
+        <div id="user-points">Points</div>
         <button id="restart">Restart</button>
-    </div>
-
-
+      </div>
+    <script src="Scripts/MovieTriviaControls.js"></script>
 </body>
 </html>
