@@ -9,6 +9,7 @@ Things to do (Week 2):
 3. Finish other trivia pages. (similar to movies trivia page)
 4. Add more CSS to trivia pages
 5. Change Slide Pictures Before Turn-in
+6. Added a Footers.html page for easier access between pages
 
 Tv show/ Movie / Video Game Trivia Game
 
