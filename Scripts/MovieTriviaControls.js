@@ -10,10 +10,20 @@ let userScore = document.getElementById("user-score");
 let userPoints = document.getElementById("user-points");
 let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
-let userName = document.getElementById("result").innerHTML=localStorage.getItem("Users");
 let questionCount;
 let scoreCount = 0;
 let scorePoints = 0;
+
+//Local Storage
+let userStorageName = localStorage.getItem('Users');
+let userDisplayName = document.getElementById("endscreen-holder");
+
+
+//Timer Variables
+let countingMins = document.getElementById("minutes")
+let countingSecs = document.getElementById("seconds");
+let minutes = 0;
+let seconds = 0;
 
 //Creating Questions Array
 const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Rose in Titanic?", options:["Leonardo DiCaprio", "Billy Zane","James Cameron","Kathy Bates"],correct: "James Cameron"},
@@ -64,6 +74,8 @@ restart.addEventListener("click", () => {
         //user points
         userPoints.innerHTML =
             "Your points: " + scorePoints;
+        //Username
+        userDisplayName.innerHTML = userStorageName;
       } 
       else 
       {
@@ -136,7 +148,8 @@ function checker(userOption) {
   else 
   {
     userOption.classList.add("incorrect");
-    scorePoints - 50;
+    scorePoints -= 50;
+    addingUserScore.innerHTML = scorePoints;
     //For marking the correct option
     choices.forEach((element) => {
       if (element.innerText == arrayOfQuestions[questionCount].correct) 
