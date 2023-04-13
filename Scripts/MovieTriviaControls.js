@@ -6,6 +6,7 @@ let countOfQuestion = document.querySelector(".number-of-question");
 let displayHolder = document.getElementById("display-container");
 let scoreHolder = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
+let backBtn = document.getElementById("back");
 let userScore = document.getElementById("user-score");
 let userPoints = document.getElementById("user-points");
 let startScreen = document.querySelector(".start-screen");
@@ -14,16 +15,17 @@ let questionCount;
 let scoreCount = 0;
 let scorePoints = 0;
 
+let holdMins = 0;
+let holdSecs = 0;
+let minHolderDisplay = document.getElementById("min-holder");
+let secHolderDisplay = document.getElementById("sec-holder");
+
+
 //Local Storage
 let userStorageName = localStorage.getItem('Users');
 let userDisplayName = document.getElementById("endscreen-holder");
+let changeUserName = document.getElementById("change-User-Name");
 
-
-//Timer Variables
-let countingMins = document.getElementById("minutes")
-let countingSecs = document.getElementById("seconds");
-let minutes = 0;
-let seconds = 0;
 
 //Creating Questions Array
 const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Rose in Titanic?", options:["Leonardo DiCaprio", "Billy Zane","James Cameron","Kathy Bates"],correct: "James Cameron"},
@@ -47,13 +49,55 @@ const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Ro
 {id: "18", question:"Who does Tim Curry play in Clue?", options:["Professor Plum","Wadsworth","Mr. Green","Colonel Mustard"],correct: "Wadsworth"},
 {id: "19", question:"When was the last Twilight movie released?", options:["2010", "2012", "2014","2016"],correct:"2012" }];
 
+
+//changeUserName
+changeUserName.addEventListener("click", () => {
+  let playersName = localStorage.getItem("Users");
+  let personName = prompt("Please enter a new name:", playersName);
+  if (personName == null || personName == "") 
+  {
+    alert("User cancelled the prompt.");
+    location.reload()
+  } 
+  else 
+  {
+    localStorage.setItem("Users", personName);
+    alert("Name Changed! Page is going to refresh!");
+    location.reload()
+  }
+});
+
+//Timer Variables
+var newseconds = 0
+var second = 0;
+var min = 0;
+var hour = 0;
+
+var timer = setInterval(upTimer, 1000);
+  function upTimer() {
+    ++newseconds;
+    hour = Math.floor(newseconds / 3600);
+    minute = Math.floor((newseconds - hour * 3600) / 60);
+    second = newseconds - (hour * 3600 + minute * 60);
+
+    holdMins = minute;
+    holdSecs = second;
+}
+  
 //Restart Quiz
 restart.addEventListener("click", () => {
     New_Game();
     scorePoints = 0;
+    holdMins = 0;
+    holdSecs = 0;
     displayHolder.classList.remove("hide");
     scoreHolder.classList.add("hide");
   });
+
+//Back Button
+backBtn.addEventListener("click", () => {
+  window.location.href = "../FortisureIT Unkown Game/MainMenu.html";
+});
 
   //Next Button
   nextBtn.addEventListener(
@@ -76,6 +120,9 @@ restart.addEventListener("click", () => {
             "Your points: " + scorePoints;
         //Username
         userDisplayName.innerHTML = userStorageName;
+
+        minHolderDisplay.innerHTML = holdMins;
+        secHolderDisplay.innerHTML = holdSecs;
       } 
       else 
       {
@@ -169,6 +216,9 @@ function New_Game() {
   questionCount = 0;
   scoreCount = 0;
   addingUserScore.innerHTML = 0;
+  seconds = 0;
+  newseconds = 0
+  upTimer();
   quizMaker();
   NewDisplay(questionCount);
 }
