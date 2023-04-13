@@ -7,7 +7,7 @@
     width: 100vw;
 }
 .UsernamePosition{
-    margin-left: 1735px;
+    margin-left: 1650px;
     position: absolute;
     margin-top: -22px;
 }
@@ -40,7 +40,9 @@ button
     cursor: pointer;
 }
 #start-button,
-#restart 
+#restart,
+#back,
+#change-User-Name 
 {
     font-size: 1.3em;
     padding: 0.5em 1.8em;
@@ -49,6 +51,12 @@ button
 #restart 
 {
     margin-top: 0.9em;
+}
+#back{
+    margin-top: 1.1em;
+}
+#change-User-Name{
+    margin-top: 0.8em;
 }
 #display-container 
 {
@@ -149,39 +157,47 @@ button
     font-size: 1.5em;
     color: #ffffff;
 }
-#minutes{
-    font-size: 1.5em;
-    color: #ffffff;
-    position: absolute;
-    margin-right: -65px;
-    margin-bottom: 140px;
-}
-#seconds {
-    font-size: 1.5em;
-    color: #ffffff; 
-    position: absolute;
-    margin-right: -125px;
-    margin-bottom: 140px;
-}
-#the-Timer{
-    font-size: 1.5em;
-    color: #ffffff; 
-    position: absolute;
-    margin-left: -35px;
-    margin-bottom: 140px;
-}
-#endscreen-username{
-    font-size: 1.5em;
-    color: #ffffff; 
-    position: absolute;
-    margin-left: -125px;
-    margin-bottom: 190px;
-}
 #endscreen-holder{
     font-size: 1.5em;
     color: #ffffff; 
     position: absolute;
-    margin-left: 140px;
-    text-align: justify;
-    margin-bottom: 190px;
+    margin-left: 15px;
+    margin-bottom: 335px;
+    /*border: solid #000;
+    border-width: 1px;*/
+}
+.Welcome{
+    margin-left: 750px;
+}
+.rules{
+    margin-left: 5px;
+}
+#the-mins{
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    margin-right: 75px;
+    margin-bottom: 275px;
+
+}
+#the-secs{
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    margin-right: -110px;
+    margin-bottom: 275px;
+}
+#min-holder{
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    margin-right: -13px;
+    margin-bottom: 275px;
+}
+#sec-holder{
+    font-size: 1.5em;
+    color: #ffffff;
+    position: absolute;
+    margin-right: -200px;
+    margin-bottom: 275px;
 }
