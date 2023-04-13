@@ -15,7 +15,19 @@
         <p>Username: <span id="result"> </span></p>
         <script>document.getElementById("result").innerHTML=localStorage.getItem("Users");</script>
     </div>
+    <!--Begin Welcome Div + Rules-->
+    <div class="Welcome">
+      <h1>Welcome To Movie Trivia!!</h1>
+      <div class="rules">
+        <h4>Rules:</h4>
+        <div class="par">
+          <p><b>Correct Questions</b> get you <b>100 Points.</b> <br> <b>Wrong Questions</b> get you <b>-50 Points.</b></p>
+        </div>
+      </div>
+    </div>
+    <!--End Welcome Div plus Rules -->
 
+    <!--Begin Start Screen plus Trivia prompt user -->
     <div class="start-screen">
         <button id="start-button">Start</button>
       </div>
@@ -37,12 +49,19 @@
       <div class="score-container hide">
         <div id="user-score">Score</div>
         <div id="user-points">Points</div>
-        <div id="the-Timer">Timer:</div>
-        <div id="endscreen-username">Name: </div>
-        <div id="endscreen-holder">Nameholder</div>
-        <span id="minutes">00</span><span id="seconds">00</span>
+        <div style="text-align:left;" id="endscreen-holder">Nameholder</div>
+        <span id="the-mins">Mins:</span>
+        <span id="the-secs">Secs:</span>
+        <span id="min-holder">00</span>
+        <span id="sec-holder">00</span>
         <button id="restart">Restart</button>
+        <button id="change-User-Name">Change Username</button>
+        <button id="back">Back</button>
       </div>
+      <!--End Start Screen plus Trivia prompt user -->
+
+      <!--Begin Script to make Trivia Work -->
     <script src="Scripts/MovieTriviaControls.js"></script>
+      <!--End Script to make Trivia-->
 </body>
 </html>
