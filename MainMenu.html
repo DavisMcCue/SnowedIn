@@ -22,7 +22,7 @@
             <h1>Snowed In!</h1>
             </div>
               <div class="navbar">
-                <a href="#home">Home</a>
+                <a href="/MainMenu.html">Home</a>
                 <a href="#home">About Us</a>
                 <a href="#news">LeaderBoards</a>
                   <div class="dropdown">
@@ -30,9 +30,9 @@
                     <i class="button"></i>
                       </button>
                        <div class="dropdown-content">
-                         <a href="#">Movie Trivia</a>
+                         <a href="MovieTrivia.html">Movie Trivia</a>
                          <a href="#">Tv-Show Trivia</a>
-                         <a href="#">Video Game Trivia</a>
+                         <a href="VideoGameTrivia.html">Video Game Trivia</a>
                           </div>
                   </div>
              </div>
@@ -46,22 +46,23 @@
 
       <!--Begin Button Images-->
       <div class="Movie_button">
-           <button id="movie_Style">Movie Trivia</button>
+           <a href="MovieTrivia.html" button id="movie_Style">Movie Trivia</a></button>
       </div>
       <div class="TV_Show_Button">
         <button id="tv_Show_Style">Tv-Show Trivia</button>
       </div>
       <div class="Video_Game_Button">
-        <button id="video_Game_Style">Video Game Trivia</button>
+          <a href="VideoGameTrivia.html" button id="video_Game_Style">Video Game Trivia</a></button>
       </div>
        <!--End Button Images-->
 
-      <!--Display UserName Top Right Hand Corner-->
+      <!--Begin Display UserName Top Right Hand Corner-->
     <div class="UsernamePosition" id="TheUsersNameDisplayed">
       <p>Username: <span id="result"> </span></p>
       <script>document.getElementById("result").innerHTML=localStorage.getItem("Users");</script>
     </div>
-
+    <!--End Display UserName Top Right Hand Corner-->
+    
     <!-- Begin Footer Section-->
     <div class="footer">
       <img src="include/Images/banner.webp" alt="Bannercolor">
