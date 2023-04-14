@@ -174,3 +174,127 @@ Video Game Trivia
       D. Miles 'Tails'
 
    Answer: Sonic
+
+5. What is Crash Bandicoot’s younger sister called?
+      A. Tawna Bandicoot
+      B. Coco Bandicoot
+      C. Nina Cortex
+      D. Yaya Panda
+
+   Answer: Coco Bandicoot
+
+6. What is the highest-selling arcade game of all time?
+      A. 1992
+      B. 1995
+      C. 1980
+      D. 1999
+
+   Answer: 1992
+
+7. What is Kirby’s main ability?
+      A. Copy 
+      B. Ultra Sword
+      C. Cook Stirs Up A Frenzy
+      D. Sword Cuts Down
+
+   Answer: Copy
+
+8. Which company owns Fortnite?
+      A. Epic Games
+      B. Steam
+      C. Battle.Net
+      D. Origin
+
+   Answer: Epic Games
+
+9. How many protagonists are in Grand Theft Auto 5?
+      A. 1
+      B. 5
+      C. 7
+      D. 3
+
+   Answer: 3
+
+10. How many playable characters are in the original Super Smash Bros?
+      A. 5
+      B. 20
+      C. 25
+      D. 12
+
+   Answer: 12
+
+11. What came first, the original Silent Hill or Resident Evil?
+      A. Resident Evil
+      B. Silent Hill
+
+   Answer: Resident Evil
+
+12. What console did GoldenEye 007 release on?
+      A. N64
+      B. Xbox
+      C. DS
+      D. PS1
+
+   Answer: N64
+
+13. What year did the first Call of Duty game release?
+      A. 2003
+      B. 2005
+      C. 2000
+      D. 2001
+
+   Answer: 2003
+
+14. What year is the main story of Fallout 3 set in?
+      A. 2277
+      B. 2300
+      C. 2505
+      D. 2900
+
+   Answer: Year 2277
+
+15. What is the name of World of Warcraft’s 4th expansion?
+      A. Mists of Pandaria
+      B. The Burning Crusade
+      C. Wrath of the Lich King
+      D. Warlords of Draenor
+
+   Answer: Mists of Pandaria
+
+16. How many controller ports does the GameCube have?
+      A. 8
+      B. 4
+      C. 2
+      D. 1
+
+   Answer: 4
+
+17. What year was the first FIFA game released?
+      A. 1999
+      B. 1993
+      C. 2000
+      D. 1990
+
+   Answer: 1993   
+
+18. What was the US launch price of the Gameboy Color?
+      A. $69.99
+      B. $79.99
+      C. $59.99
+      D. $49.99
+
+   Answer: $69.99
+
+19. How many copies of Wii Sports were sold?
+      A. 82.90 million
+      B. 70.00 million
+      C. 65.80 million
+      D. 50.21 million
+
+   Answer: 82.90 million
+
+20. What was the first home console to feature proper internet capabilities?
+      A. Dreamcast
+      B. Blizzcon 
+
+   Answer: Dreamcast
