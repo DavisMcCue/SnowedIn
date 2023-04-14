@@ -28,26 +28,26 @@ let changeUserName = document.getElementById("change-User-Name");
 
 
 //Creating Questions Array
-const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Rose in Titanic?", options:["Leonardo DiCaprio", "Billy Zane","James Cameron","Kathy Bates"],correct: "James Cameron"},
-{id: "1", question:"Freddy Krueger wears a striped sweater that is which colors?", options:["Red and blue","Orange and green"," Red and green", " Orange and brown"],correct: "Red and green"},
-{id: "2", question:"If you watch the Marvel movies in chronological order, which movie would you watch first?", options:["Iron Man", "Captain America: The First Avenger", "Doctor Strange", "Captain Marvel"],correct: "Captain America: The First Avenger"},
-{id: "3", question:"What is the name of the camp where counselors are terrorized by a slasher in Friday the 13th?", options:["Camp Holland Lake", "Camp Crystal Lake", "Camp Diamond Lake","Camp Green Lake"],correct:"Camp Crystal Lake" },
-{id: "4", question:"The dog in The Sandlot is nicknamed “The Beast.” What’s the dog’s actual name?", options:["Hercules", "Goliath","Atlas", "Zeus"],correct: "Hercules" },
-{id: "5", question:"A Harry Potter stunt double was paralyzed on the job. Which actor did the stunt double do stunts for?", options:["Rupert Grint","Emma Watson", "Alan Rickman", "Daniel Radcliffe"],correct:"Daniel Radcliffe"},
-{id: "6", question:"Which actor plays Private Ryan in Saving Private Ryan?", options:["Tom Hanks", "Vin Diesel", "Edward Burns", "Matt Damon"],correct: "Matt Damon" },
-{id: "7", question:"What is the name of Jeff Goldblum’s character in Jurassic Park?", options:["Dr. Ian Malcolm","Dr. Malcolm Stevens", "Dr. Evan Malcolm","Dr. Michael Ian"],correct: "Dr. Ian Malcolm"},
-{id: "8", question:"What is the highest-grossing movie of all time?", options:["Titanic","Avatar","Avengers: Endgame","Star Wars: The Force Awakens"],correct:"Avatar"},
-{id: "9", question:"What are the names of the two people behind Ghostface in Scream?", options:["Billy and Steve","Bobby and Stu", "Bobby and Steve", "Billy and Stu"],correct:"Billy and Stu"},
-{id: "10", question:"What year was the first Die Hard movie released?", options:["1986","1988", "1990", "1991"],correct: "1988"},
-{id: "11", question:"What is the name of the chainsaw-wielding maniac in The Texas Chainsaw Massacre?", options:["Leatherhead","Leatherface","Hideface","Leathercap"],correct:"Leatherface"},
-{id: "12", question:"What was the highest-grossing movie of 2005?", options:["War of the Worlds", "Star Wars: Episode III: Revenge of the Sith", "Harry Potter and the Goblet of Fire","The Chronicles of Narnia: The Lion, The Witch, and the Wardrobe"],correct:"Harry Potter and the Goblet of Fire"},
-{id: "13", question:"What movie is this famous quote from: “You can’t handle the truth!”", options:["Training Day","Saving Private Ryan", "A Few Good Men", "Armageddon"],correct: "A Few Good Men"},
-{id: "14", question:"Which comedian makes a zombie cameo in Zombieland?", options:["Dan Aykroyd", "Chevy Chase", "Steve Martin","Bill Murray"],correct:"Bill Murray"},
-{id: "15", question:"What’s the name of the planet Obi-Wan Kenobi and Anakin Skywalker duel on in Star Wars Episode III: Revenge of the Sith?", options:["Hoth", "Mustafar", "Yavin", "Tatooine"],correct:"Mustafar"},
-{id: "16", question:"What year was The Dark Knight released?", options:["2003","2005","2008","2009"],correct:"2008"},
-{id: "17", question:"What word completes this famous quote from Jerry McGuire: “Show me the ____.” ", options:["Love","Proof","Money","Man"],correct:"Money"},
-{id: "18", question:"Who does Tim Curry play in Clue?", options:["Professor Plum","Wadsworth","Mr. Green","Colonel Mustard"],correct: "Wadsworth"},
-{id: "19", question:"When was the last Twilight movie released?", options:["2010", "2012", "2014","2016"],correct:"2012" }];
+const arrayOfQuestions = [{id: "0", question:"What year was the PlayStation 1 released?", options:["1990", "1997","2000","1995"],correct: "1995"},
+{id: "1", question:"How many Pokèmon does Generation 1 feature?", options:["200","301"," 150", "151"],correct: "151"},
+{id: "2", question:"What is the best-selling video game of all time?", options:["Minecraft", "GTA 5", "Pokemon GO", "World Of Warcraft"],correct: "Minecraft"},
+{id: "3", question:"Who is Sega’s mascot?", options:["Sonic", "Knuckles", "Doctor Eggman","Miles 'Tails'"],correct:"Sonic" },
+{id: "4", question:"What is Crash Bandicoot’s younger sister called?", options:["Tawna Bandicoot", "Coco Bandicoot","Nina Cortex", "Yaya Panda"],correct: "Coco Bandicoot" },
+{id: "5", question:"What is the highest-selling arcade game of all time?", options:["1992","1995", "1980", "1999"],correct:"1992"},
+{id: "6", question:"What is Kirby’s main ability?", options:["Copy ", "Ultra Sword", "Cook Stirs Up A Frenzy", "Sword Cuts Down"],correct: "Copy" },
+{id: "7", question:"Which company owns Fortnite?", options:["Epic Games","Steam", "Battle.Net","Origin"],correct: "Epic Games"},
+{id: "8", question:"How many protagonists are in Grand Theft Auto 5?", options:["1","5","7", "3" ],correct:"3"},
+{id: "9", question:"How many playable characters are in the original Super Smash Bros?", options:["5","20", "25", "12"],correct:"12"},
+{id: "10", question:"What came first, the original Silent Hill or Resident Evil?", options:["Resident Evil","Silent Hill"],correct: "Resident Evil"},
+{id: "11", question:"What console did GoldenEye 007 release on?", options:["N64","Xbox","DS","PS1"],correct:"N64"},
+{id: "12", question:"What year did the first Call of Duty game release?", options:["2003", "2005", "2000","2001"],correct:"2003"},
+{id: "13", question:"What year is the main story of Fallout 3 set in?", options:["2277","2300", "2505", " 2900"],correct: " 2277"},
+{id: "14", question:"What is the name of World of Warcraft’s 4th expansion?", options:["Mists of Pandaria", "The Burning Crusade", "Wrath of the Lich King","Warlords of Draenor"],correct:"Mists of Pandaria"},
+{id: "15", question:"How many controller ports does the GameCube have?", options:["8", "4", "2", "1"],correct:"4"},
+{id: "16", question:"What year was the first FIFA game released?", options:["1999","1993","2000","1990"],correct:"1993"},
+{id: "17", question:"What was the US launch price of the Gameboy Color?", options:["$69.99","$79.99","$59.99","$49.99"],correct:"$69.99"},
+{id: "18", question:"How many copies of Wii Sports were sold?", options:["82.90 million","70.00 million","65.80 million","50.21 million"],correct: "82.90 million"},
+{id: "19", question:"What was the first home console to feature proper internet capabilities?", options:["Dreamcast", "Blizzcon"],correct:"Dreamcast" }];
 
 
 //changeUserName
