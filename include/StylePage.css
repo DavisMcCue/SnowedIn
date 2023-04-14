@@ -108,7 +108,7 @@ body{
 /*Video Game Button Style */
 .Video_Game_Button{
     position: absolute;
-    margin-top: -300px;
+    margin-top: -500px;
     margin-left: 855px;
 }
 #video_Game_Style{
@@ -133,7 +133,7 @@ body{
     background-color: black;
 }
 .UsernamePosition{
-    margin-left: 1735px;
+    margin-left: 1600px;
     position: absolute;
     margin-top: -1028px;
 }
