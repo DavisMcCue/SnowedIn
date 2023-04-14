@@ -96,7 +96,7 @@ restart.addEventListener("click", () => {
 
 //Back Button
 backBtn.addEventListener("click", () => {
-  window.location.href = "../FortisureIT Unkown Game/MainMenu.html";
+  window.location.href = "../SnowedIn/MainMenu.html";
 });
 
   //Next Button

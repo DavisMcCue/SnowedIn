@@ -74,7 +74,7 @@ var min = 0;
 var hour = 0;
 
 var timer = setInterval(upTimer, 1000);
-  function upTimer() {
+function upTimer() {
     ++newseconds;
     hour = Math.floor(newseconds / 3600);
     minute = Math.floor((newseconds - hour * 3600) / 60);
@@ -96,7 +96,7 @@ restart.addEventListener("click", () => {
 
 //Back Button
 backBtn.addEventListener("click", () => {
-  window.location.href = "../FortisureIT Unkown Game/MainMenu.html";
+  window.location.href = "../SnowedIn/MainMenu.html";
 });
 
   //Next Button
