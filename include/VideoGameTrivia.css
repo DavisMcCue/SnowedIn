@@ -42,6 +42,7 @@ button
 #start-button,
 #restart,
 #back,
+#first-back,
 #change-User-Name 
 {
     font-size: 1.3em;
@@ -49,6 +50,10 @@ button
     border-radius: 0.2em;
 }
 #restart 
+{
+    margin-top: 0.9em;
+}
+#first-back
 {
     margin-top: 0.9em;
 }
