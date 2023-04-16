@@ -7,6 +7,7 @@ let displayHolder = document.getElementById("display-container");
 let scoreHolder = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let backBtn = document.getElementById("back");
+let firstBtn = document.getElementById("first-back");
 let userScore = document.getElementById("user-score");
 let userPoints = document.getElementById("user-points");
 let startScreen = document.querySelector(".start-screen");
@@ -96,6 +97,10 @@ restart.addEventListener("click", () => {
 
 //Back Button
 backBtn.addEventListener("click", () => {
+  window.location.href = "../SnowedIn/MainMenu.html";
+});
+
+firstBtn.addEventListener("click", () => {
   window.location.href = "../SnowedIn/MainMenu.html";
 });
 
