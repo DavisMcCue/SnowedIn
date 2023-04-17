@@ -206,3 +206,21 @@ button
     margin-right: -200px;
     margin-bottom: 275px;
 }
+/*Smaller then 600px*/
+@media screen and (max-width: 600px) {
+    .UsernamePosition {
+        margin-left: 62vw;
+        position: absolute;
+        margin-top: -19px;  
+    }
+    .Welcome{
+        margin-left: 15vw;
+    }
+    .rules{
+        margin-left: 5px;
+    }
+    .header-blue-bar img{
+        height: 2.8vw;
+        width: 100vw;
+    }
+}

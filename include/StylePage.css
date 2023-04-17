@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0;
-    padding: 0;
-    background: gray;
-    font-family: sans-serif;
+    width:100%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px
 }
+
 .header img{
     height: 1vw;
     width: 100vw;
@@ -137,5 +138,52 @@ body{
     position: absolute;
     margin-top: -1028px;
 }
+/*Smaller then 600px*/
+@media screen and (max-width: 600px) {
+    .header img{
+        height: 3vw;
+        width: 100vw;
+    }
+    .footer img{
+        height: 3vw;
+        width: 100vw;
+    }
+    .theFooter{
+        margin-left: 45vw;
+        position: absolute;
+        margin-top: -22px;
+    }
+    .WelcomeText p{
+        margin-top: -22px;
+        margin-left: 45vw;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:black;
+        position: absolute;
+    }
+    .TitleText h1{
+        margin-left: 45vw;
+        margin-top: 2px;
+        position: absolute;
+        color: #0d98ba;
+    }
+    .Movie_button
+    {
+        position: absolute;
+        margin-top: -64vw;
+        margin-left: 15vw;
+    }
+    .Video_Game_Button
+    {
+        position: absolute;
+        margin-top: -64vw;
+        margin-left: 32vw;
+    }
+    .TV_Show_Button
+    {
+        position: absolute;
+        margin-top: -68vw;
+        margin-left: 32vw;
+    }
 
+}
 

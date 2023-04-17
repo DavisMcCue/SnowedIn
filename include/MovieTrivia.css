@@ -17,8 +17,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body 
-{
+body{
+    width:100%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px;
     background-color: #0a69ed;
 }
 .start-screen,
@@ -205,4 +208,22 @@ button
     position: absolute;
     margin-right: -200px;
     margin-bottom: 275px;
+}
+/*Smaller then 600px*/
+@media screen and (max-width: 600px) {
+    .UsernamePosition {
+        margin-left: 62vw;
+        position: absolute;
+        margin-top: -19px;  
+    }
+    .Welcome{
+        margin-left: 15vw;
+    }
+    .rules{
+        margin-left: 5px;
+    }
+    .header-blue-bar img{
+        height: 2.8vw;
+        width: 100vw;
+    }
 }
