@@ -29,15 +29,15 @@ let changeUserName = document.getElementById("change-User-Name");
 
 
 //Creating Questions Array
-const arrayOfQuestions = [{id: "0", question:"Question: What does Michael Scott eat for lunch on The Office that makes him fall asleep?", options:["whole chicken pot pie ", "Pizza","Pasta","Pork"],correct: "whole chicken pot pie"},
+const arrayOfQuestions = [{id: "0", question:"Question: What does Michael Scott eat for lunch on The Office that makes him fall asleep?", options:["Whole Chicken Pot Pie ", "Pizza","Pasta","Pork"],correct: "Whole Chicken Pot Pie"},
 {id: "1", question:"Michael Cera's character in Arrested Development shares a name with which pop legend?", options:["George Michael","Michael Bluth"," Gob Bluth", "Lucille Bluth"],correct: "George Michael"},
 {id: "2", question:"Which Game of Thrones star was nominated for an Emmy for every single season?", options:["Peter Dinklage", "Sophie Turner", "Emilia Clarke", "Pedro Pascal"],correct: "Peter Dinklage"},
-{id: "3", question:"What is Tim Taylor’s neighbor’s name in Home Improvement? ", options:["Wilson", "Tim Taylor", "Al Borland","Jill Taylor"],correct:"Wilson" },
+{id: "3", question:"What is Tim Taylor’s neighbor’s name in Home Improvement? ", options:["Wilson", "Tim Taylor", "Al Borland","Jill Taylor"], correct:"Wilson" },
 {id: "4", question:"What is the longest continuously running game show on television? ", options:["Family Feud", "That's My Jam","The Voice", "The Price is Right"],correct: "The Price is Right" },
-{id: "5", question:"What do the characters in M.A.S.H. call the senior staff members’ tent? ", options:["The Swamp","Capt. Benjamin Franklin Hawkeye Pierce", "Lt. Col. Henry Blake", "Capt. B.J. Hunnicutt"],correct:"The Swamp "},
+{id: "5", question:"What do the characters in M.A.S.H. call the senior staff members’ tent? ", options:["The Swamp","Capt. Benjamin Franklin Hawkeye Pierce", "Lt. Col. Henry Blake", "Capt. B.J. Hunnicutt"],correct:"The Swamp"},
 {id: "6", question:"How many children were in the Brady family on The Brady Bunch? ", options:["5 ", "6", "8", "9"],correct: "6" },
 {id: "7", question:"What is the name of the teacher on the Magic School Bus? ", options:["Ms. Frizzle","Keesha Franklin", "Wanda Li","Phoebe Terese"],correct: "Ms. Frizzle"},
-{id: "8", question:"What is the nickname given to the haunted house featured in the series American Horror Story?", options:["Murder House","Hotel","Cult", "Murder House" ],correct:"Murder House"},
+{id: "8", question:"What is the nickname given to the haunted house featured in the series American Horror Story?", options:["Asylum","Hotel","Cult", "Murder House" ],correct:"Murder House"},
 {id: "9", question:"What is the longest running prime time television show in history? ", options:["The Simpsons","Family Guy", "American Dad", "Futurama"],correct:"The Simpsons"},
 {id: "10", question:"What is the name of the restaurant where Penny works as a waitress in The Big Bang Theory? ", options:["Cheesecake Factory","Olive Garden", "Texas Roadhouse", "Hard Rock Cafe"],correct: "Cheesecake Factory"},
 {id: "11", question:"What cable network picked up Friday Night Lights after it was originally cancelled? ", options:["Amazon","PBS","CW Network","DirectTV"],correct:"DirectTV"},
