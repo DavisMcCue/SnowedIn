@@ -183,13 +183,13 @@ Video Game Trivia
 
    Answer: Coco Bandicoot
 
-6. What is the highest-selling arcade game of all time?
-      A. 1992
-      B. 1995
-      C. 1980
-      D. 1999
+6. Which company develops the Dark Souls series?
+      A. Electronic Arts
+      B. PopCap Games
+      C. Ubisoft
+      D. FromSoftware
 
-   Answer: 1992
+   Answer: FromSoftware
 
 7. What is Kirby’s main ability?
       A. Copy 
@@ -298,3 +298,147 @@ Video Game Trivia
       B. Blizzcon 
 
    Answer: Dreamcast
+
+
+TV Show Trivia
+--------------------------------
+
+1. Question: What does Michael Scott eat for lunch on The Office that makes him fall asleep?
+      A. whole chicken pot pie 
+      B. Pizza
+      C. Pasta
+      D. Pork
+   Answer: A whole chicken pot pie
+
+2. Question: MichaelCera's character in Arrested Developmentshares a name with which pop legend?
+      A. George Michael
+      B. Michael Bluth
+      C. Gob Bluth
+      D. Lucille Bluth
+   Answer: George Michael
+
+3. Question: Which Game of Thrones star was nominated for an Emmy for every single season?
+      A. Peter Dinklage
+      B. Sophie Turner
+      C. Emilia Clarke
+      D. Pedro Pascal
+   Answer: Peter Dinklage
+
+4. What is Tim Taylor’s neighbor’s name in Home Improvement? 
+      A. Wilson
+      B. Tim Taylor
+      C. Al Borland
+      D. Jill Taylor
+   Answer: Wilson
+
+5. What is the longest continuously running game show on television? 
+      A. Family Feud
+      B. That's My Jam
+      C. The Voice
+      D. The Price is Right
+   Answer: The Price is Right
+
+6. What do the characters in M.A.S.H. call the senior staff members’ tent? 
+      A. The Swamp 
+      B. Capt. Benjamin Franklin "Hawkeye" Pierce
+      C. Lt. Col. Henry Blake
+      D. Capt. B.J. Hunnicutt
+   Answer: The Swamp
+
+7. How many children were in the Brady family on The Brady Bunch? 
+      A. 5
+      B. 6
+      C. 8
+      D. 9
+   Answer: 6
+
+8. What is the name of the teacher on the Magic School Bus? 
+      A. Ms. Frizzle
+      B. Keesha Franklin
+      C. Wanda Li
+      D. Phoebe Terese
+   Answer: Ms. Frizzle
+
+9. What is the nickname given to the haunted house featured in the series American Horror Story? 
+      A. Murder House
+      B. Asylum
+      C. Hotel
+      D. Cult
+   Answer: Murder House
+
+10. What is the longest running prime time television show in history? 
+      A. The Simpsons
+      B. Family Guy
+      C. American Dad
+      D. Futurama
+   Answer: The Simpsons
+
+11. What is the name of the restaurant where Penny works as a waitress in The Big Bang Theory? 
+      A. Cheesecake Factory
+      B. Olive Garden
+      C. Texas Roadhouse
+      D. Hard Rock Cafe
+   Answer: Cheesecake Factory
+
+12. What cable network picked up Friday Night Lights after it was originally cancelled? 
+      A. Amazon
+      B. PBS
+      C. CW Network
+      D. DirectTV
+   Answer: DirectTV
+
+13. How much does a burger cost on Bob’s Burgers? 
+      A. $7.95
+      B. $8.99
+      C. $4.99
+      D. $5.95
+   Answer: $5.95
+
+14. How many people were killed by Annalise Keating on How to Get Away with Murder? 
+      A. 1
+      B. 4
+      C. 3
+      D. 0
+   Answer:0
+
+15. What product is featured in Don’s final ad, which aired at the end of the Mad Men series finale? 
+      A. Pepsi
+      B. Coca-Cola
+      C. Fanta
+      D. Dasani
+   Answer: Coca-Cola
+
+16. Where did the Simpson family live?
+      A. Bakersfield
+      B. Springfield 
+      C. Heartfield 
+      D. Steamfield
+   Answer: Springfield 
+
+17. It’s as easy as 1, 2, 3! The "Big Three" U.S. commercial broadcast television networks are CBS, NBC, and what Disney-owned third network?
+      A. ABC
+      B. Netflix
+      C. Hulu
+      D. Paramount Plus
+   Answer: ABC
+
+18. Who sings the theme to "Drake and Josh"?
+      A. Drake Bell
+      B. Jennifer Lopez
+      C. Josh Peck
+      D. Miranda Cosgrove
+   Answer: Drake Bell
+
+19. Why did Megan hand over the phone to Drake when she won tickets to a concert
+      A. Blackmail-He wanted the tickets so he had to do her homework
+      B. Cause she was being nice
+      C. Because He threatened her with a wedgie
+      D. Megan burnt his guitar so she owed him one
+   Answer: Blackmail-He wanted the tickets so he had to do her homework
+
+20. What color was Tony Hawk's Viper? (Drake and Josh Go HollyWood)
+      A. Red
+      B. Blue
+      C. Black
+      D. Green
+   Answer: Red
