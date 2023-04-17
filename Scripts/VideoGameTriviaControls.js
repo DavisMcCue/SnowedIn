@@ -97,11 +97,11 @@ restart.addEventListener("click", () => {
 
 //Back Button
 backBtn.addEventListener("click", () => {
-  window.location.href = "../SnowedIn/MainMenu.html";
+  window.location.href = "../SnowedIn-main/SnowedIn/MainMenu.html";
 });
 
 firstBtn.addEventListener("click", () => {
-  window.location.href = "../SnowedIn/MainMenu.html";
+  window.location.href = "../SnowedIn-main/SnowedIn/MainMenu.html";
 });
 
   //Next Button
