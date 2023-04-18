@@ -12,7 +12,7 @@ Step 1: (Movie) 20 Question Trivia
   Record both score and time at the end of the scoreboard to pass to future leaderboard.
   
 
-Step 2: (TV-Shows) 20 Question Trivia
+Step 2: (TV-Show) 20 Question Trivia
   right answer = add points
   Wrong answer = sub points
   
