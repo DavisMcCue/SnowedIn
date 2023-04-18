@@ -223,11 +223,13 @@ Video Game Trivia
 
    Answer: 12
 
-11. What came first, the original Silent Hill or Resident Evil?
-      A. Resident Evil
-      B. Silent Hill
+11. Which video game console released in 2006 pioneered the use of motion controls in its gameplay?
+      A. Nintendo Wii
+      B. Steam Deck
+      C. Vive Headset
+      D. Xbox360 Motion Capture
 
-   Answer: Resident Evil
+   Answer: Nintendo Wii
 
 12. What console did GoldenEye 007 release on?
       A. N64
@@ -296,6 +298,8 @@ Video Game Trivia
 20. What was the first home console to feature proper internet capabilities?
       A. Dreamcast
       B. Blizzcon 
+      C. Microsoft
+      D. Sony
 
    Answer: Dreamcast
 
