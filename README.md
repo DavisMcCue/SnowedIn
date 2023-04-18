@@ -2,7 +2,7 @@
 
 Index.html will allow users to make a username before progessing to make trivia page. User can also change name at the end of the scoreboard before it records.
 
-Tv show/ Movie / Video Game Trivia Game
+TV-Show/ Movie / Video Game Trivia Game
 
 Step 1: (Movie) 20 Question Trivia
   right answer = add points
@@ -12,7 +12,7 @@ Step 1: (Movie) 20 Question Trivia
   Record both score and time at the end of the scoreboard to pass to future leaderboard.
   
 
-Step 2: (Tv-Shows) 20 Question Trivia
+Step 2: (TV-Shows) 20 Question Trivia
   right answer = add points
   Wrong answer = sub points
   
