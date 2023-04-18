@@ -21,7 +21,7 @@ let minHolderDisplay = document.getElementById("min-holder");
 let secHolderDisplay = document.getElementById("sec-holder");
 
 
-//Local Storage
+//Declaring Local Storage 
 let userStorageName = localStorage.getItem('Users');
 let userDisplayName = document.getElementById("endscreen-holder");
 let changeUserName = document.getElementById("change-User-Name");

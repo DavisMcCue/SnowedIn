@@ -16,18 +16,21 @@ function nextImage()
     slideShowImages[currentImageCounter].style.display ="block";
 
     console.log(currentImageCounter);
+    //First Slide
     if(currentImageCounter == "0")
     {
         movie_Style.style.display = "block";
         tv_Show_Style.style.display = "none";
         video_Game_Style.style.display = "none";
     }
+    //Second Slide
     else if(currentImageCounter == "1")
     {
         movie_Style.style.display = "none";
         tv_Show_Style.style.display = "block";
         video_Game_Style.style.display = "none";
     }
+    //Third Slide
     else if(currentImageCounter == "2")
     {
         movie_Style.style.display = "none";
