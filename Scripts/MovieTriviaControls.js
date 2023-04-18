@@ -15,7 +15,6 @@ let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
 let scorePoints = 0;
-
 let holdMins = 0;
 let holdSecs = 0;
 let minHolderDisplay = document.getElementById("min-holder");
@@ -51,7 +50,7 @@ const arrayOfQuestions = [{id: "0", question:"Who actually drew the sketch of Ro
 {id: "19", question:"When was the last Twilight movie released?", options:["2010", "2012", "2014","2016"],correct:"2012" }];
 
 
-//changeUserName
+//ChangeUserName
 changeUserName.addEventListener("click", () => {
   let playersName = localStorage.getItem("Users");
   let personName = prompt("Please enter a new name:", playersName);
@@ -111,16 +110,16 @@ firstBtn.addEventListener("click", () => {
 
       //increment questionCount
       questionCount += 1;
-      //if last question
+      //If last question
       if (questionCount == arrayOfQuestions.length) 
       {
-        //hide question container and display score
+        //Hide question container and display score
         displayHolder.classList.add("hide");
         scoreHolder.classList.remove("hide");
-        //user score
+        //User score
         userScore.innerHTML =
           "Your score: " + scoreCount + " out of " + questionCount;
-        //user points
+        //User points
         userPoints.innerHTML =
             "Your points: " + scorePoints;
 
@@ -137,7 +136,7 @@ firstBtn.addEventListener("click", () => {
         countOfQuestion.innerHTML =
           questionCount + 1 + " of " + arrayOfQuestions.length + " Question";
 
-        //display quiz
+        //Display quiz
         NewDisplay(questionCount);
       }
     })
@@ -147,12 +146,12 @@ firstBtn.addEventListener("click", () => {
 const NewDisplay = (questionCount) => {
     let otherCards = document.querySelectorAll(".container-mid");
 
-    //hide other cards
+    //Hide other cards
     otherCards.forEach((card) => {
         card.classList.add("hide");
     });
 
-    //display current card
+    //Display current card
     otherCards[questionCount].classList.remove("hide");
 };
 //Quiz Creation Function/Code
@@ -161,21 +160,21 @@ function quizMaker()
     //Randomly Sort The Questions
     arrayOfQuestions.sort(() => Math.random() - 0.5);
 
-    //generate the quiz
+    //Generate the quiz
     for(let i of arrayOfQuestions){
-        //random sort the Options
+        //Random sort the Options
         i.options.sort(() => Math.random() - 0.5);
-        //quiz card creation
+        //Quiz card creation
         let creationDiv = document.createElement("div");
         creationDiv.classList.add("container-mid", "hide");
-        //question number
+        //Question number
         countOfQuestion.innerHTML = 1 + " of " + arrayOfQuestions.length + " Question";
-        //question
+        //Question
         let question_DIV = document.createElement("p");
         question_DIV.classList.add("question");
         question_DIV.innerHTML = i.question;
         creationDiv.appendChild(question_DIV);
-        //options
+        //Options
         creationDiv.innerHTML += `
         <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
         <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
@@ -192,7 +191,7 @@ function checker(userOption) {
     document.getElementsByClassName("container-mid")[questionCount];
   let choices = question.querySelectorAll(".option-div");
   
-  //if user clicked answer == correct option stored in object
+  //If user clicked answer == correct option stored in object
   if (userSolution === arrayOfQuestions[questionCount].correct) 
   {
     userOption.classList.add("correct");
@@ -213,12 +212,12 @@ function checker(userOption) {
       }
     });
   }
-  //disable all options
+  //Disable all options
   choices.forEach((element) => {
     element.disabled = true;
   });
 }
-//initial setup
+//Initial setup
 function New_Game() {
   quizHolder.innerHTML = "";
   questionCount = 0;

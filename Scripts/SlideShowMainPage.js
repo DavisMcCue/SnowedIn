@@ -3,11 +3,12 @@ const slideShowImages = document.querySelectorAll(".slider .imgs");
 const nextImageDelay = 3400 /* 3.4 secs */
 let currentImageCounter = 0;
 
-/*Display First Image*/
+//Display First Image
 slideShowImages[currentImageCounter].style.display ="block";
 movie_Style.style.display = "block";
 setInterval(nextImage, nextImageDelay);
 
+//Slide Show Controls
 function nextImage()
 {
     slideShowImages[currentImageCounter].style.display ="none";
