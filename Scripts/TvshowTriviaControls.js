@@ -28,7 +28,7 @@ let changeUserName = document.getElementById("change-User-Name");
 
 
 //Creating Questions Array
-const arrayOfQuestions = [{id: "0", question:"Question: What does Michael Scott eat for lunch on The Office that makes him fall asleep?", options:["Whole Chicken Pot Pie ", "Pizza","Pasta","Pork"],correct: "Whole Chicken Pot Pie"},
+const arrayOfQuestions = [{id: "0", question:"What does Michael Scott eat for lunch on The Office that makes him fall asleep?", options:["Whole Chicken Pot Pie ", "Pizza","Pasta","Pork"],correct: "Whole Chicken Pot Pie"},
 {id: "1", question:"Michael Cera's character in Arrested Development shares a name with which pop legend?", options:["George Michael","Michael Bluth"," Gob Bluth", "Lucille Bluth"],correct: "George Michael"},
 {id: "2", question:"Which Game of Thrones star was nominated for an Emmy for every single season?", options:["Peter Dinklage", "Sophie Turner", "Emilia Clarke", "Pedro Pascal"],correct: "Peter Dinklage"},
 {id: "3", question:"What is Tim Taylor’s neighbor’s name in Home Improvement? ", options:["Wilson", "Tim Taylor", "Al Borland","Jill Taylor"], correct:"Wilson" },
@@ -40,13 +40,13 @@ const arrayOfQuestions = [{id: "0", question:"Question: What does Michael Scott 
 {id: "9", question:"What is the longest running prime time television show in history? ", options:["The Simpsons","Family Guy", "American Dad", "Futurama"],correct:"The Simpsons"},
 {id: "10", question:"What is the name of the restaurant where Penny works as a waitress in The Big Bang Theory? ", options:["Cheesecake Factory","Olive Garden", "Texas Roadhouse", "Hard Rock Cafe"],correct: "Cheesecake Factory"},
 {id: "11", question:"What cable network picked up Friday Night Lights after it was originally cancelled? ", options:["Amazon","PBS","CW Network","DirectTV"],correct:"DirectTV"},
-{id: "12", question:"ow much does a burger cost on Bob’s Burgers?", options:["$7.95", "$8.99", "$4.99","$5.95"],correct:"$5.95"},
+{id: "12", question:"How much does a burger cost on Bob’s Burgers?", options:["$7.95", "$8.99", "$4.99","$5.95"],correct:"$5.95"},
 {id: "13", question:"How many people were killed by Annalise Keating on How to Get Away with Murder? ", options:["1","4", "3", "0"],correct: "0"},
 {id: "14", question:"What product is featured in Don’s final ad, which aired at the end of the Mad Men series finale?", options:["Pepsi", "Coca-Cola", "Fanta","Dasani"],correct:"Coca-Cola"},
 {id: "15", question:"Where did the Simpson family live?", options:["Bakersfield", "Springfield", "Heartfield", "Steamfield"],correct:"Springfield"},
 {id: "16", question:"It’s as easy as 1, 2, 3! The Big Three U.S. commercial broadcast television networks are CBS, NBC, and what Disney-owned third network?", options:["ABC","Netflix","Hulu","Paramount Plus"],correct:"ABC"},
 {id: "17", question:"Who sings the theme to Drake and Josh?", options:["Drake Bell","Jennifer Lopez","Josh Peck","Miranda Cosgrove"],correct:"Drake Bell"},
-{id: "18", question:"Why did Megan hand over the phone to Drake when she won tickets to a concert", options:["Blackmail-He wanted the tickets so he had to do her homework","Cause she was being nice","Because He threatened her with a wedgie","Megan burnt his guitar so she owed him one"],correct: "Blackmail-He wanted the tickets so he had to do her homework"},
+{id: "18", question:"Why did Megan hand over the phone to Drake when she won tickets to a concert?", options:["Blackmail-He wanted the tickets so he had to do her homework","Cause she was being nice","Because He threatened her with a wedgie","Megan burnt his guitar so she owed him one"],correct: "Blackmail-He wanted the tickets so he had to do her homework"},
 {id: "19", question:"What color was Tony Hawk's Viper? (Drake and Josh Go HollyWood)", options:["Red", "Blue", "Black", "Green"],correct:"Red" }];
 
 

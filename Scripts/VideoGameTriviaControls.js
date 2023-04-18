@@ -33,12 +33,12 @@ const arrayOfQuestions = [{id: "0", question:"What year was the PlayStation 1 re
 {id: "2", question:"What is the best-selling video game of all time?", options:["Minecraft", "GTA 5", "Pokemon GO", "World Of Warcraft"],correct: "Minecraft"},
 {id: "3", question:"Who is Sega’s mascot?", options:["Sonic", "Knuckles", "Doctor Eggman","Miles 'Tails'"],correct:"Sonic" },
 {id: "4", question:"What is Crash Bandicoot’s younger sister called?", options:["Tawna Bandicoot", "Coco Bandicoot","Nina Cortex", "Yaya Panda"],correct: "Coco Bandicoot" },
-{id: "5", question:"What is the highest-selling arcade game of all time?", options:["1992","1995", "1980", "1999"],correct:"1992"},
+{id: "5", question:"Which company develops the Dark Souls series?", options:["Electronic Arts","FromSoftware", "Ubisoft", "PopCap Games"],correct:"FromSoftware"},
 {id: "6", question:"What is Kirby’s main ability?", options:["Copy ", "Ultra Sword", "Cook Stirs Up A Frenzy", "Sword Cuts Down"],correct: "Copy" },
 {id: "7", question:"Which company owns Fortnite?", options:["Epic Games","Steam", "Battle.Net","Origin"],correct: "Epic Games"},
 {id: "8", question:"How many protagonists are in Grand Theft Auto 5?", options:["1","5","7", "3" ],correct:"3"},
 {id: "9", question:"How many playable characters are in the original Super Smash Bros?", options:["5","20", "25", "12"],correct:"12"},
-{id: "10", question:"What came first, the original Silent Hill or Resident Evil?", options:["Resident Evil","Silent Hill"],correct: "Resident Evil"},
+{id: "10", question:"Which video game console released in 2006 pioneered the use of motion controls in its gameplay?", options:["Nintendo Wii","Steam Deck", "Vive Headset","Xbox360 Motion Capture"],correct: "Nintendo Wii"},
 {id: "11", question:"What console did GoldenEye 007 release on?", options:["N64","Xbox","DS","PS1"],correct:"N64"},
 {id: "12", question:"What year did the first Call of Duty game release?", options:["2003", "2005", "2000","2001"],correct:"2003"},
 {id: "13", question:"What year is the main story of Fallout 3 set in?", options:["2277","2300", "2505", " 2900"],correct: " 2277"},
@@ -47,7 +47,7 @@ const arrayOfQuestions = [{id: "0", question:"What year was the PlayStation 1 re
 {id: "16", question:"What year was the first FIFA game released?", options:["1999","1993","2000","1990"],correct:"1993"},
 {id: "17", question:"What was the US launch price of the Gameboy Color?", options:["$69.99","$79.99","$59.99","$49.99"],correct:"$69.99"},
 {id: "18", question:"How many copies of Wii Sports were sold?", options:["82.90 million","70.00 million","65.80 million","50.21 million"],correct: "82.90 million"},
-{id: "19", question:"What was the first home console to feature proper internet capabilities?", options:["Dreamcast", "Blizzcon"],correct:"Dreamcast" }];
+{id: "19", question:"What was the first home console to feature proper internet capabilities?", options:["Dreamcast", "Blizzcon", "Microsoft", "Sony"],correct:"Dreamcast" }];
 
 
 //ChangeUserName
